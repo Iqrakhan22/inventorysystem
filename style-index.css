@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter', sans-serif;
+}
+.main{
+	position: relative;
+	width: 100%;
+	height: 75px;
+	background-color: #FFB9B9;
+	background-size: cover;
+	background-position: center;
+}
+.logo{
+	height: 20%;
+	color: #000000;
+	padding: 13px;
+	font-size: 25px;
+}
+.gif{
+	display: flex;
+	align-items: center;
+}
+.gif img{
+	width: 30%;
+	padding-top: 5pc;
+	padding-left: 5pc;
+	margin-right: 8pc;
+}
+.gif .about{
+	font-size: 20px; 
+	padding-right: 5pc;
+	font-family: 'Space Mono', monospace;
+/*	font-family: 'Red Hat Display', sans-serif;
+*/}
+.gif .about ol{
+	padding-top: 50px;
+}
+.manage{
+	text-align: center;
+	padding-top: 100px;
+	font-size: 15px;
+}
+/*.veticle-line{
+	border-left: 1px solid black;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-top: 10pc;
+}*/
+
+footer{
+	position: relative;
+	/*width: 100%;*/
+	background: #474E68;
+	min-height: 300px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer .social_icon,
+footer .menu
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+
+}
+footer .social_icon li,
+footer .menu
+{
+	list-style: none;
+}
+footer .social_icon li a{
+	font-size: 2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social_icon li a:hover{
+	transform: translateY(-10px);
+}
+footer .menu li a{
+	font-size: 1.2em;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+	text-decoration: none;
+	opacity: 0.75;
+}
+footer .menu li a:hover{
+	opacity: 1;
+}
+footer p{
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+/*footer .waves{
+	position: absolute;
+	top: -100pxs;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #f00 url(wave.png);
+	background-size: 1000px 100px;
+}*/
