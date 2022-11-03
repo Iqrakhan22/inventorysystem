@@ -46,14 +46,24 @@
 	height: 300px;
 	position: absolute;
 	left: 50%;
-	margin-top: 10pc;
+	/*margin-top: 10pc;*/
 }*/
+.click button{
+	padding-left: 100px;
+	font-size: 100px;
+	padding: 10px;
+	margin: 20px;
+	background-color: red;
+	position: absolute;
+	/*transform: translate(-50%, -50%);*/
+	justify-content: center;
+}
 
 footer{
 	position: relative;
 	/*width: 100%;*/
 	background: #474E68;
-	min-height: 300px;
+	min-height: 500px;
 	padding: 20px 50px;
 	display: flex;
 	justify-content: center;
@@ -68,23 +78,106 @@ footer .menu
 	justify-content: center;
 	align-items: center;
 	margin: 10px 0;
-
+}
+footer .social_icon .icon{
+	margin: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .social_icon .icon li{
+	position: relative;
+	height: 45px;
+	width: 45px;
+	display: block;
+	background: #fff;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 50%;
+	z-index: 2;
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .social_icon .icon li ion-icon{
+	font-size: 23px;
+	padding-top: 10px;
+	text-align: center;
+	line-height: 120px;
+}
+footer .social_icon .icon:hover li ion-icon{
+	color: #fff;
 }
 footer .social_icon li,
 footer .menu
 {
 	list-style: none;
+	
 }
-footer .social_icon li a{
+footer .social_icon .icon .tooltip{
+	position: absolute;
+	background: #fff;
+	font-size: 15px;
+	padding: 10px 18px;
+	border-radius: 25px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+footer .social_icon .icon:hover .tooltip{
+	top: -45px;
+	opacity: 1;
+	pointer-events: auto;
+}
+footer .social_icon .icon .tooltip: before{
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	background: red;
+	bottom: -8px;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+}
+footer .social_icon .icon:hover li,
+footer .social_icon .icon:hover .tooltip,
+{
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+footer .social_icon .facebook:hover li,
+footer .social_icon .facebook:hover .tooltip,
+footer .social_icon .facebook:hover tooltip:before{
+	background: #3B5999;
+}
+footer .social_icon .linkedin:hover li,
+footer .social_icon .linkedin:hover .tooltip,
+footer .social_icon .linkedin:hover tooltip:before{
+	background: #0072B1;
+}
+footer .social_icon .instagram:hover li,
+footer .social_icon .instagram:hover .tooltip,
+footer .social_icon .instagram:hover tooltip:before{
+	background: #e1306c;
+}
+footer .social_icon .github:hover li,
+footer .social_icon .github:hover .tooltip,
+footer .social_icon .github:hover tooltip:before{
+	background: #333;
+}
+/*footer .social_icon li a{
 	font-size: 2em;
 	color: #fff;
 	margin: 0 10px;
 	display: inline-block;
 	transition: 0.5s;
-}
-footer .social_icon li a:hover{
+}*/
+/*footer .social_icon li a:hover{
 	transform: translateY(-10px);
-}
+}*/
 footer .menu li a{
 	font-size: 1.2em;
 	color: #fff;
@@ -101,15 +194,10 @@ footer p{
 	color: #fff;
 	text-align: center;
 	margin-top: 15px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-size: 1.1em;
 }
-/*footer .waves{
-	position: absolute;
-	top: -100pxs;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	background: #f00 url(wave.png);
-	background-size: 1000px 100px;
-}*/
+footer .Presented span{
+	color: #fff;
+	margin-top: 10pc;
+}
